@@ -29,6 +29,7 @@ services:
     working_dir: /var/www
     volumes:
         - "./.env:/var/www/.env"
+        - "./app/storage:/var/www/storage"
     links:
       - developer-db
   developer-db:
